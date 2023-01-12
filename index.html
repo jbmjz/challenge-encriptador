@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="Logo Alura"> 
+    </header>
+<main>
+        <section class="encriptar">
+            <textarea id="introducir-texto" class="textarea" type="mensaje" cols="50" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="alerta">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="btn-conteiner">
+                <button id="btn1" class="btn1">Encriptar!</button>
+                    <button id="btn2"class="btn2">Desencriptar!</button>
+                </div>
+        </section>
+        <section class="tablero">
+            <div id="conteiner-resultado">
+                <h2 id="titulo-resultado"></h2>
+            </div>
+            <div id="toy" class="conteinerImg">
+                <img src="imagenes/muneco.png" alt="muneco">
+                <p  class="text1"><strong>Ningún texto mensaje fue encontrado</strong></p>
+                <p class="text2">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea id="resultado" readonly></textarea>
+            <button id="btn-copy" class="btnCopy">Copiar</button>
+        
+        </section>
+</main> 
+<footer>&copy copyright Encriptador-2023 Jhoana Bello</footer>
+
+<script src="js/encriptador.js"></script>
+<script src="js/desencriptador.js"></script>
+<script src="js/copiar.js"></script>
+</body>
+</html>
